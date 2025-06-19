@@ -1,0 +1,56 @@
+tablas (parcial)
+
+tabla "Entornos"
+campos:
+ID (PK)(int)
+desc_entorno(string)
+
+Tabla "Obras"
+campos:
+Id (PK)(int)
+Nombre_obra (string)
+tipo (FK)(int)
+Area_responsable (FK)(int)
+descripcion    (string)
+monto_contrato (float)
+Comuna (FK)(int)
+direccion (string)
+fecha_inicio (date)
+fecha_fin (date)
+plazo(int)
+porcentaje_avance(float)
+año_licitacion (string)
+contratacion_tipo(FK)(int)
+licitacion_empresa(FK)(int)
+nro_contratacion (string)
+cuit_contratista (string)
+mano_de_obra (int)
+compromiso (string)
+destacada (string)
+ba_elige (string)
+
+tabla "Tipos_obras"
+campos:
+id (PK)
+desc_tipo (string)
+
+
+tabla "Areas_responsables"
+campos:
+id(PK)
+desc_areas (string)
+
+tabla "Comunas"
+campos:
+id (PK)
+barrio (string)
+
+tabla "Tipos_contrataciones"
+campos:
+id (PK)
+desc_contrataciones (string)
+
+Tabla "Empresas_licitadoras"
+campos:
+ID (PK)
+Empresa (String)
